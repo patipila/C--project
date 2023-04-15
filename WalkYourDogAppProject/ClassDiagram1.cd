@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WalkYourDogApp.AdvertModel">
+    <Position X="17.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAgAEBAABIAAAAQEIgAAAAIADICCAAAAEgAAAAAAABQ=</HashCode>
+      <FileName>AdvertModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WalkYourDogApp.AdvertNameComparator">
+    <Position X="7.75" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>AdvertNameComparator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WalkYourDogApp.AppAdvertsModel">
+    <Position X="15.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAEAAAEABCQAAACQIAAAAABAAAAgAAAABA=</HashCode>
+      <FileName>AppAdvertsModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="appAdverts" />
+    </ShowAsAssociation>
+    <Lollipop Orientation="Bottom" Position="1.3" />
+  </Class>
+  <Class Name="WalkYourDogApp.AppDogModel">
+    <Position X="12.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABABAAAAACQIAAAAABAAAAgAAAABA=</HashCode>
+      <FileName>AppDogModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WalkYourDogApp.AppOwnerModel">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAIABAAAAACQIAAAAAABAAAgAAAABA=</HashCode>
+      <FileName>AppOwnerModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Collections.Generic.List&lt;T&gt;">
+    <Position X="1" Y="6.75" Width="2" />
+    <NestedTypes>
+      <Struct Name="System.Collections.Generic.List&lt;T&gt;.Enumerator" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WalkYourDogApp.AppWalkerModel">
+    <Position X="8.75" Y="6.5" Width="1.5" />
+    <InheritanceLine Type="WalkYourDogAppProject.XmlSerializable" FixedFromPoint="true">
+      <Path>
+        <Point X="8.5" Y="3.5" />
+        <Point X="8.5" Y="3.125" />
+        <Point X="9.5" Y="3.125" />
+        <Point X="9.5" Y="6.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEABIAAAACQIAAhAAABAIAgAAAABA=</HashCode>
+      <FileName>AppWalkerModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WalkYourDogApp.DogModel" BaseTypeListCollapsed="true">
+    <Position X="11" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAASIAAAgAASEMAAAgAAAEAAAAACAAAAAgIFAFBQ=</HashCode>
+      <FileName>DogModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dogSize" />
+      <Field Name="activityDemand" />
+      <Field Name="dogGender" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="WalkYourDogApp.OwnerModel">
+    <Position X="13.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CQgAQAAIAAAAAAAEAQAAAAAgAgAAIAoAIABIACEAQBA=</HashCode>
+      <FileName>OwnerModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ownerGender" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WalkYourDogApp.WalkerModel">
+    <Position X="6.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgGIAAIAAAiABAEIEgEIAAEAAAAAAAAAAAAAAIEEhA=</HashCode>
+      <FileName>WalkerModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="walkerGender" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WalkYourDogApp.WalkerNameComparator">
+    <Position X="2.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>WalkerNameComparator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="WalkYourDogApp.WrongLengthException">
+    <Position X="3.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>WrongLengthException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WalkYourDogAppProject.XmlSerializable">
+    <Position X="7.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>XmlSerializable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="WalkYourDogAppProject.IListable">
+    <Position X="3.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IListable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WalkYourDogApp.IMainView">
+    <Position X="3.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IMainView.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="WalkYourDogAppProject.IXml">
+    <Position X="3.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>IXml.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="WalkYourDogApp.EnumSize">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAACAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DogModel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WalkYourDogApp.EnumActivity">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAACAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DogModel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WalkYourDogApp.EnumGender">
+    <Position X="3" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>DogModel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WalkYourDogApp.EnumOwnerGender">
+    <Position X="5.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>OwnerModel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="WalkYourDogApp.EnumWalkerGender">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>WalkerModel.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
