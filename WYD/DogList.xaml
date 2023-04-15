@@ -1,0 +1,40 @@
+﻿<Window x:Class="WYD.DogList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WYD"
+        mc:Ignorable="d"
+        SizeToContent="WidthAndHeight"
+        ResizeMode="CanMinimize"
+        Title="DogList" Height="450" Width="800">
+    <Grid x:Name="DogList1" Background="#FFBAC0CC">
+        <ListBox x:Name="listDogList" HorizontalAlignment="Left" Height="214" Margin="39,78,0,0" VerticalAlignment="Top" Width="568" d:ItemsSource="{d:SampleData ItemCount=5}" BorderBrush="#FF239C99" BorderThickness="1,1,3,3" SelectionChanged="listDogList_SelectionChanged"/>
+        <Label x:Name="AppName_lbl" Content="  WALK YOUR &#xA;        DOG" Margin="619,63,41,316" RenderTransformOrigin="0.5,0.5" FontFamily="Franklin Gothic Heavy" FontSize="18" FontWeight="Bold" Foreground="#FF239C99" FontStyle="Italic" BorderBrush="Black" BorderThickness="3,3,3,3">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF141C48" Offset="0.136"/>
+                    <GradientStop Color="#FF62769E" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-5.955"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-41.723"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="lblThatDogList" Content="That's all your dogs!" HorizontalAlignment="Left" Height="53" Margin="36,20,0,0" VerticalAlignment="Top" Width="560" Background="#FFBAC0CC" Foreground="#FF141C48" FontFamily="Franklin Gothic Heavy" FontSize="20"/>
+        <Button x:Name="btnCreateNewDogDogList" Content="Create new dog" HorizontalAlignment="Left" Height="70" Margin="81,316,0,0" VerticalAlignment="Top" Width="167" Background="#FF5D7199" BorderBrush="#FF249B98" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF171F49" BorderThickness="1,1,3,3" Click="btnCreateNewDogDogList_Click"/>
+        <Button x:Name="btnExitDogList" Content="Exit" HorizontalAlignment="Center" Height="70" Margin="0,316,0,0" VerticalAlignment="Top" Width="167" Background="#FF5D7199" BorderBrush="#FF249B98" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF171F49" BorderThickness="1,1,3,3" Click="btnExitDogList_Click"/>
+        <Button x:Name="btnDeleteDogList" Content="Delete" HorizontalAlignment="Left" Height="45" Margin="640,107,0,0" VerticalAlignment="Top" Width="131" Background="#FF5D7199" BorderBrush="#FF249B98" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF171F49" BorderThickness="1,1,3,3" Click="btnDeleteDogList_Click"/>
+        <Button x:Name="btnNextDogList" Content="Next"  IsEnabled="False" HorizontalAlignment="Left" Height="70" Margin="556,316,0,0" VerticalAlignment="Top" Width="167" Background="#FF5D7199" BorderBrush="#FF249B98" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF171F49" BorderThickness="1,1,3,3" Click="btnNextDogList_Click"/>
+        <ComboBox x:Name="cbxSortDirectionDogList" Visibility="Hidden" HorizontalAlignment="Left" Margin="640,230,0,0" VerticalAlignment="Top" Width="131" Height="21"/>
+        <ComboBox x:Name="cbxSortByWhatDogList" Visibility="Hidden" HorizontalAlignment="Left" Margin="638,256,0,0" VerticalAlignment="Top" Width="133" Height="21"/>
+        <Button x:Name="btnSortPropDogList" Content="Select sort &#xA;properties" HorizontalAlignment="Left" Height="42" Margin="640,175,0,0" VerticalAlignment="Top" Width="131" Background="#FF5D7199" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF1E254B" BorderBrush="#FF299794" BorderThickness="1,1,3,3" Click="btnSortDogList_Click"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,73 @@
+﻿<Window x:Class="WYD.AppWalkersForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WYD"
+        mc:Ignorable="d"
+        SizeToContent="WidthAndHeight"
+        ResizeMode="CanMinimize"
+        Title="AppWalkersForm" Height="450" Width="800">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVis"/>
+    </Window.Resources>
+
+    <Grid Background="#FFBAC0CC">
+        <Label x:Name="AppName_lbl" Content="  WALK YOUR &#xA;        DOG" Margin="0,0,27,322" RenderTransformOrigin="0.5,0.5" FontFamily="Franklin Gothic Heavy" FontSize="18" FontWeight="Bold" Foreground="#FF239C99" FontStyle="Italic" BorderBrush="Black" BorderThickness="3,3,3,3" HorizontalAlignment="Right" Width="140" Height="55" VerticalAlignment="Bottom">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF141C48" Offset="0.136"/>
+                    <GradientStop Color="#FF62769E" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-5.955"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-41.723"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="btnBackAppWalkersForm"  Content="Back" Height="27" Margin="10,397,739,0" VerticalAlignment="Top" Background="#FF5D7199" BorderBrush="#FF249B98" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF171F49" BorderThickness="1,1,3,3" Click="btnExitAdvertAppForm_Copy_Click"/>
+        <Label x:Name="lblAppWalkersForm" Content="Hello Dog Owner! Find the best walker for your dog!" HorizontalAlignment="Left" Height="32" Margin="100,0,0,0" VerticalAlignment="Top" Width="514" Background="#FFBAC0CC" FontFamily="Franklin Gothic Heavy" FontSize="20" Foreground="#FF171F49"/>
+
+        <ListView Name="lsbAppWalkersForm" Margin="68,95,154,52" MouseDoubleClick="lsbAppWalkersForm_Double_Clik">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Id" Width="40" DisplayMemberBinding="{Binding WalkerId}" />
+                    <GridViewColumn Header="Name" Width="100" DisplayMemberBinding="{Binding WalkerName}" />
+                    <GridViewColumn Header="Surname" Width="100" DisplayMemberBinding="{Binding WalkerSurname}" />
+                    <GridViewColumn Header="DateOfBirth" Width="90" DisplayMemberBinding="{Binding WalkerDateOfBirth}" />
+                    <GridViewColumn Header="Email" Width="150" DisplayMemberBinding="{Binding WalkerEmail}" />
+                    <GridViewColumn Header="Phone Number" Width="90" DisplayMemberBinding="{Binding WalkerPhone}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+
+
+        <TextBox x:Name="txtAppWalkersFormFilter"  TextChanged="txtAdvertFormFilter_TextChanged" Style="{StaticResource textboxSearch}" Margin="68,47,462,0" VerticalAlignment="Top" Height="43" GotFocus="txtAppWalkersFormFilter_GotFocus" 
+                 />
+        <ComboBox Name="cbxAppWalkersFormSortBy" Visibility="Hidden" SelectedIndex="0" Width="120" Margin="659,294,21,114"/>
+        <ComboBox Name="cbxAppWalkersFormSortDiraction" Visibility="Hidden" SelectedIndex="0" Width="120" Margin="659,325,21,83"/>
+        <Label x:Name="lblSearchAppWalkerForm" Margin="144,53,536,342" FontSize="14
+               "  Content="Search here ..." Visibility="Visible" RenderTransformOrigin="0.5,0.5" GotFocus="lblSearchAppWalkerForm_GotFocus" >
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.234"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="btnSortPropAppWalkerForm" Content="Select sort &#xA;properties" HorizontalAlignment="Left" Height="42" Margin="659,243,0,0" VerticalAlignment="Top" Width="120" Background="#FF5D7199" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF1E254B" BorderBrush="#FF299794" BorderThickness="1,1,3,3" Click="btnSortAppWalkerForm_Click"/>
+        <Button x:Name="btnDeleteAppWalkerForm" Content="Delete" HorizontalAlignment="Left" Height="44" Margin="659,182,0,0" VerticalAlignment="Top" Width="120" Background="#FF5D7199" BorderBrush="#FF249B98" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF171F49" BorderThickness="1,1,3,3" Click="btnDeleteAppWalkerForm_Click"/>
+        <Label x:Name="lblInfoAppWalkersForm" Content="Double click on &#xA;interesting walker &#xA;to know more!" HorizontalAlignment="Left" Height="58" Margin="666,119,0,0" VerticalAlignment="Top" Width="106" Background="#FFBAC0CC" FontFamily="Franklin Gothic Heavy" FontSize="11" Foreground="#FF171F49"/>
+
+
+    </Grid>
+
+
+</Window>

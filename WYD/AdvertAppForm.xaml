@@ -1,0 +1,50 @@
+﻿<Window x:Class="WYD.AdvertAppForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WYD"
+        mc:Ignorable="d"
+        SizeToContent="WidthAndHeight"
+        ResizeMode="CanMinimize"
+        Title="AdvertAppForm" Height="600
+        " Width="800">
+    <Grid x:Name="AdvertAppForm1" Background="#FFBAC0CC">
+        <Label x:Name="AppName_lbl" Content="  WALK YOUR &#xA;        DOG" Margin="648,52,12,470" RenderTransformOrigin="0.5,0.5" FontFamily="Franklin Gothic Heavy" FontSize="18" FontWeight="Bold" Foreground="#FF239C99" FontStyle="Italic" BorderBrush="Black" BorderThickness="3,3,3,3">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF141C48" Offset="0.136"/>
+                    <GradientStop Color="#FF62769E" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-5.955"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-41.723"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="lblCreateAdvertAppForm" Content="Create new advert!" Margin="63,24,259,372" FontFamily="Franklin Gothic Heavy" FontSize="20" Foreground="#FF1A224D"/>
+        <Label x:Name="lblTitleAdvertAppForm" Content="Title:" HorizontalAlignment="Left" Height="27" Margin="63,67,0,0" VerticalAlignment="Top" Width="84" FontFamily="Franklin Gothic Heavy" FontSize="16" Background="#FFBAC0CC" Foreground="#FF171F49"/>
+        <TextBox x:Name="txtTitleAdvertAppForm" HorizontalAlignment="Left" Height="28" Margin="211,67,0,0" TextWrapping="Wrap" Text="Title" VerticalAlignment="Top" Width="417" BorderBrush="#FF239C99" BorderThickness="1,1,3,3" GotFocus="txtTitleAdvertAppForm_GotFocus" />
+        <TextBox x:Name="txtAdvertPrizeAdvertAppForm" HorizontalAlignment="Left" Height="28" Margin="211,167,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="417" BorderBrush="#FF239C99" BorderThickness="1,1,3,3" GotFocus="txtAdvertPrizeAdvertAppForm_GotFocus"  />
+        <Label x:Name="lblAdvertPrizeAdvertAppForm" Content="Advert Prize:" HorizontalAlignment="Left" Height="27" Margin="63,167,0,0" VerticalAlignment="Top" Width="114" FontFamily="Franklin Gothic Heavy" FontSize="16" Background="#FFBAC0CC" Foreground="#FF171F49"/>
+        <Label x:Name="lblChooseTheDateAdvertAppForm" Content="Choose the date:" HorizontalAlignment="Left" Height="27" Margin="63,259,0,0" VerticalAlignment="Top" Width="148" FontFamily="Franklin Gothic Heavy" FontSize="16" Background="#FFBAC0CC" Foreground="#FF171F49"/>
+        <TextBox x:Name="txtWalkingTimeAdvertAppForm" HorizontalAlignment="Left" Height="28" Margin="211,206,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="417" BorderBrush="#FF239C99" BorderThickness="1,1,3,3" GotFocus="txtWalkingTimeAdvertAppForm_GotFocus"/>
+        <Label x:Name="lblWalkingTimeAdvertAppForm" Content="Walking time:" HorizontalAlignment="Left" Height="27" Margin="63,206,0,0" VerticalAlignment="Top" Width="114" FontFamily="Franklin Gothic Heavy" FontSize="16" Background="#FFBAC0CC" Foreground="#FF171F49"/>
+        <Calendar x:Name="calemdar" HorizontalAlignment="Left" Height="177" Margin="262,258,0,0" VerticalAlignment="Top" Width="294" SelectedDatesChanged="calemdar_SelectedDatesChanged"/>
+        <Label x:Name="lblOwnerAdvertAppForm" Content="Owner:" HorizontalAlignment="Left" Height="27" Margin="63,103,0,0" VerticalAlignment="Top" Width="84" FontFamily="Franklin Gothic Heavy" FontSize="16" Background="#FFBAC0CC" Foreground="#FF171F49"/>
+        <Label x:Name="lblDogAdvertAppForm" Content="Dog:" HorizontalAlignment="Left" Height="27" Margin="63,135,0,0" VerticalAlignment="Top" Width="84" FontFamily="Franklin Gothic Heavy" FontSize="16" Background="#FFBAC0CC" Foreground="#FF171F49"/>
+        <Label x:Name="txtOwnerAdvertAppForm" Content="Label" HorizontalAlignment="Left" Height="27" Margin="211,103,0,0" VerticalAlignment="Top" Width="395"/>
+        <Label x:Name="txtDogAdvertAppForm" Content="Label" HorizontalAlignment="Left" Height="27" Margin="211,135,0,0" VerticalAlignment="Top" Width="395"/>
+        <Button x:Name="btnAddAdvertAdvertAppForm" Content="Add advert" HorizontalAlignment="Left" Height="56" Margin="666,102,0,0" VerticalAlignment="Top" Width="98" Background="#FF5D7199" BorderBrush="#FF249B98" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF171F49" BorderThickness="1,1,3,3" Click="btnAddAdvertAdvertAppForm_Click"/>
+        <Button x:Name="btnCleanAdvertAppForm" Content="Clean" HorizontalAlignment="Left" Height="56" Margin="666,177,0,0" VerticalAlignment="Top" Width="98" Background="#FF5D7199" BorderBrush="#FF249B98" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF171F49" BorderThickness="1,1,3,3" Click="btnCleanAdvertAppForm_Click" />
+        <Button x:Name="btnAllAdvertsAdvertAppForm"  Content="All adverts" HorizontalAlignment="Left" Height="56" Margin="666,253,0,0" VerticalAlignment="Top" Width="98" Background="#FF5D7199" BorderBrush="#FF249B98" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF171F49" BorderThickness="1,1,3,3" Click="btnAllAdvertsAdvertAppForm_Copy1_Click"/>
+        <Label x:Name="lblContentAdvertAppForm" Content="Content:" HorizontalAlignment="Left" Height="27" Margin="63,440,0,0" VerticalAlignment="Top" Width="148" FontFamily="Franklin Gothic Heavy" FontSize="16" Background="#FFBAC0CC" Foreground="#FF171F49"/>
+        <TextBox x:Name="txtContentAdvertAppForm" HorizontalAlignment="Left" Height="134" Margin="168,440,0,0" TextWrapping="Wrap" Text="Content" VerticalAlignment="Top" Width="596" BorderBrush="#FF239C99" BorderThickness="1,1,3,3" GotFocus="txtContentAdvertAppForm_GotFocus"/>
+        <Button x:Name="btnBackAdvertAppForm"  Content="Back" Height="27" Margin="10,547,739,0" VerticalAlignment="Top" Background="#FF5D7199" BorderBrush="#FF249B98" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF171F49" BorderThickness="1,1,3,3" Click="btnExitAdvertAppForm"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,44 @@
+﻿<Window x:Class="WYD.OwnerForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WYD"
+        mc:Ignorable="d"
+        SizeToContent="WidthAndHeight"
+        ResizeMode="CanMinimize"
+        Title="OwnerForm" Height="450" Width="800">
+    <Grid x:Name="OwnerForm1" Background="#FFBAC0CC" HorizontalAlignment="Right" Width="800">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="74*"/>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="73*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="listOwnerForm" HorizontalAlignment="Left" Height="241" Margin="81,85,0,0" VerticalAlignment="Top" Width="558" d:ItemsSource="{d:SampleData ItemCount=5}" Grid.ColumnSpan="3" SelectionChanged="listOwnerForm_SelectionChanged"/>
+        <Label x:Name="lblPickOwnerForm" Content="Pick yourself from the list." HorizontalAlignment="Left" Height="35" Margin="81,23,0,0" VerticalAlignment="Top" Width="479" FontFamily="Franklin Gothic Heavy" FontSize="22" Background="#FFBAC0CC" Foreground="#FF19224E" Grid.ColumnSpan="3"/>
+        <Label x:Name="AppName_lbl" Content="  WALK YOUR &#xA;        DOG" Margin="140,52,12,327" RenderTransformOrigin="0.5,0.5" FontFamily="Franklin Gothic Heavy" FontSize="18" FontWeight="Bold" Foreground="#FF239C99" FontStyle="Italic" BorderBrush="Black" BorderThickness="3,3,3,3" Grid.Column="2">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF141C48" Offset="0.136"/>
+                    <GradientStop Color="#FF62769E" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-5.955"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-41.723"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="btnDeleteOwnerForm" Content="Delete" HorizontalAlignment="Left" Height="60" Margin="158,93,0,0" VerticalAlignment="Top" Width="102" Background="#FF5D7199" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF1E254B" BorderBrush="#FF299794" BorderThickness="1,1,3,3" Grid.Column="2" Click="btnDeleteOwnerForm_Click"/>
+        <Button x:Name="btnAddOwnerForm" Content="Add" HorizontalAlignment="Left" Height="60" Margin="158,176,0,0" VerticalAlignment="Top" Width="102" Background="#FF5D7199" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF1E254B" BorderBrush="#FF299794" BorderThickness="1,1,3,3" Grid.Column="2" Click="btnAddOwnerForm_Click"/>
+        <Button x:Name="btnNextOwnerForm" Content="Next" IsEnabled="False" HorizontalAlignment="Left" Height="58" Margin="39,350,0,0" VerticalAlignment="Top" Width="98" Background="#FF5D7199" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF1E254B" BorderBrush="#FF299794" BorderThickness="1,1,3,3" Grid.Column="1" Click="btnNextOwnerForm_Click"/>
+        <Button x:Name="btnExitOwnerForm" Content="Exit" HorizontalAlignment="Left" Height="58" Margin="81,350,0,0" VerticalAlignment="Top" Width="98" Background="#FF5D7199" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF1E254B" BorderBrush="#FF299794" BorderThickness="1,1,3,3" Click="Button_Click"/>
+        <ComboBox x:Name="cbxSortDirectionOwnerForm" Visibility="Hidden" Grid.Column="2" HorizontalAlignment="Left" Margin="158,324,0,0" VerticalAlignment="Top" Width="102" Height="21"/>
+        <ComboBox x:Name="cbxSortByWhatOwnerForm" Visibility="Hidden" Grid.Column="2" HorizontalAlignment="Left" Margin="158,350,0,0" VerticalAlignment="Top" Width="102" Height="21"/>
+        <Button x:Name="btnSortPropOwnerForm" Content="Select sort &#xA;properties" HorizontalAlignment="Left" Height="60" Margin="158,259,0,0" VerticalAlignment="Top" Width="102" Background="#FF5D7199" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF1E254B" BorderBrush="#FF299794" BorderThickness="1,1,3,3" Grid.Column="2" Click="btnSortOwnerForm_Click"/>
+
+    </Grid>
+</Window>

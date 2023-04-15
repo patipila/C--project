@@ -1,0 +1,46 @@
+﻿<Window x:Class="WYD.DogInformation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WYD"
+        mc:Ignorable="d"
+         SizeToContent="WidthAndHeight"
+        ResizeMode="CanMinimize"
+        Height="450" 
+        Width="400"
+        Title="DogInformation" >
+    
+    <Grid Background="#FFBAC0CC">
+        <Label x:Name="AppName_lbl" Content="  WALK YOUR &#xA;        DOG" Grid.Row="0" Margin="0,0,4,324" RenderTransformOrigin="0.5,0.5" FontFamily="Franklin Gothic Heavy" FontSize="18" FontWeight="Bold" Foreground="#FF239C99" FontStyle="Italic" BorderBrush="Black" BorderThickness="3,3,3,3" Height="55" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="143">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF141C48" Offset="0.136"/>
+                    <GradientStop Color="#FF62769E" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-5.955"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-41.723"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="lblONameDogInformation" Content="Name:"  HorizontalAlignment="Left" Height="27" Margin="36,72,0,0" VerticalAlignment="Top" Width="84" FontFamily="Franklin Gothic Heavy" FontSize="16" Background="#FFBAC0CC" Foreground="#FF171F49"/>
+        <Label x:Name="lblSizeDogInformation" Content="Size:" HorizontalAlignment="Left" Height="27" Margin="36,123,0,0" VerticalAlignment="Top" Width="84" FontFamily="Franklin Gothic Heavy" FontSize="16" Background="#FFBAC0CC" Foreground="#FF171F49"/>
+        <Label x:Name="txtNameDogInformation" Content="Empty" HorizontalAlignment="Left" Height="27" Margin="184,72,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label x:Name="txtSizeDogInformation" Content="Empty" HorizontalAlignment="Left" Height="27" Margin="184,125,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label x:Name="txtDescriptionDogInformation" Content="Empty" HorizontalAlignment="Left" Height="145" Margin="36,244,0,0" VerticalAlignment="Top" Width="310"/>
+        <Label x:Name="lblActivityDemandDogInformation" Content="Activity Demand:" HorizontalAlignment="Left" Height="27" Margin="36,150,0,0" VerticalAlignment="Top" Width="143" FontFamily="Franklin Gothic Heavy" FontSize="16" Background="#FFBAC0CC" Foreground="#FF171F49"/>
+        <Label x:Name="txtActivityDemandDogInformation" Content="Empty" HorizontalAlignment="Left" Height="27" Margin="184,152,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label x:Name="lblGenderDogInformation" Content="Gender:" HorizontalAlignment="Left" Height="27" Margin="37,179,0,0" VerticalAlignment="Top" Width="84" FontFamily="Franklin Gothic Heavy" FontSize="16" Background="#FFBAC0CC" Foreground="#FF171F49"/>
+        <Label x:Name="txtGenderDogInformation" Content="Empty" HorizontalAlignment="Left" Height="27" Margin="184,181,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label x:Name="lblDescriptionDogInformation" Content="Description:" HorizontalAlignment="Left" Height="27" Margin="37,209,0,0" VerticalAlignment="Top" Width="114" FontFamily="Franklin Gothic Heavy" FontSize="16" Background="#FFBAC0CC" Foreground="#FF171F49"/>
+        <Button x:Name="btnBackDogInformation"  Content="Back" Height="27" Margin="10,397,336,0" VerticalAlignment="Top" Background="#FF5D7199" BorderBrush="#FF249B98" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF171F49" BorderThickness="1,1,3,3" Click="btnExitAdvertAppForm_Copy_Click"/>
+        <Label x:Name="lblAgeDogInformation" Content="Age:" HorizontalAlignment="Left" Height="27" Margin="35,99,0,0" VerticalAlignment="Top" Width="84" FontFamily="Franklin Gothic Heavy" FontSize="16" Background="#FFBAC0CC" Foreground="#FF171F49"/>
+        <Label x:Name="txtAgeDogInformation" Content="Empty" HorizontalAlignment="Left" Height="27" Margin="184,98,0,0" VerticalAlignment="Top" Width="176"/>
+
+    </Grid>
+</Window>

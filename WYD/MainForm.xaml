@@ -1,0 +1,73 @@
+﻿<Window x:Class="WYD.MainForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WYD"
+        SizeToContent="WidthAndHeight"
+        ResizeMode="CanMinimize"
+        mc:Ignorable="d"
+        Title="MainForm" Height="450" Width="800">
+    <Grid x:Name="MainForm1" Background="#FFD1CEE2" RenderTransformOrigin="0.496,0.518">
+        <Label x:Name="lbl_LogoMainForm" Content="  WALK YOUR &#xD;&#xA;        DOG" Margin="250,67,292,270" RenderTransformOrigin="0.5,0.5" FontFamily="Franklin Gothic Heavy" FontSize="36" FontWeight="Bold" Foreground="#FF239C99" FontStyle="Italic" BorderBrush="Black" BorderThickness="3,3,3,3">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF141C48" Offset="0.136"/>
+                    <GradientStop Color="#FF62769E" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-5.955"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-41.723"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button x:Name="btn_AddNewWalkerMainForm" Content="Add New Walker" HorizontalAlignment="Left" Height="52" Margin="134,264,0,0" VerticalAlignment="Top" Width="176" Background="#FF4C5C84" FontSize="20" FontFamily="Franklin Gothic Heavy" Foreground="#FFD0CEDA" BorderBrush="#FF239C99" BorderThickness="3,3,3,3" RenderTransformOrigin="0.549,1.606" Click="AddWalker_btn_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-5.955"/>
+                    <RotateTransform Angle="0.321"/>
+                    <TranslateTransform Y="-41.669" X="-0.34"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btn_AddNewAdvertMainForm" Content="Add New Advert" HorizontalAlignment="Left" Height="53" Margin="463,214,0,0" VerticalAlignment="Top" Width="176" Background="#FF4C5C84" FontSize="20" FontFamily="Franklin Gothic Heavy" Foreground="#FFD0CEDA" BorderBrush="#FF239C99" BorderThickness="3,3,3,3" RenderTransformOrigin="0.5,0.5" Click="AddAdvert_btn_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-5.955"/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btn_BrowseAdvertsMainForm" Content="Browse Adverts" HorizontalAlignment="Left" Height="52" Margin="461,303,0,0" VerticalAlignment="Top" Width="176" Background="#FF4C5C84" FontSize="20" FontFamily="Franklin Gothic Heavy" Foreground="#FFD0CEDA" BorderBrush="#FF239C99" BorderThickness="3,3,3,3" RenderTransformOrigin="2.893,0.585" Click="BrowseAdvert_btn_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-5.955"/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnBrowseWalkersMainForm" Content="Browse Walkers" HorizontalAlignment="Left" Height="53" Margin="136,307,0,0" VerticalAlignment="Top" Width="176" Background="#FF4C5C84" FontSize="20" FontFamily="Franklin Gothic Heavy" Foreground="#FFD0CEDA" BorderBrush="#FF239C99" BorderThickness="3,3,3,3" RenderTransformOrigin="2.893,0.585" Click="BrowseWalkers_btn_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-5.955"/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label x:Name="lblAddMainForm" Content="Add new walker or advert!" HorizontalAlignment="Left" Height="32" Margin="258,167,0,0" VerticalAlignment="Top" Width="356" FontFamily="Franklin Gothic Heavy" FontSize="20" Background="#FFD1CEE2" Foreground="#FF141C48"/>
+        <Label x:Name="lblJustMainForm" Content="Just browse adverts and walkers - choose the best!" HorizontalAlignment="Left" Height="51" Margin="136,290,0,0" VerticalAlignment="Top" Width="600" Foreground="#FF151D48" FontFamily="Franklin Gothic Heavy" FontSize="20"/>
+
+
+    </Grid>
+</Window>

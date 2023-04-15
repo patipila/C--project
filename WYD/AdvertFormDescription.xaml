@@ -1,0 +1,49 @@
+﻿<Window x:Class="WYD.AdvertFormDescription"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WYD"
+        mc:Ignorable="d"
+        Title="AdvertFormDescription"
+         SizeToContent="WidthAndHeight"
+        ResizeMode="CanMinimize"
+        Height="450" 
+        Width="400">
+    <Grid Background="#FFBAC0CC">
+
+        <Label x:Name="AppName_lbl" Content="  WALK YOUR &#xA;        DOG" Grid.Row="0" Margin="0,0,4,324" RenderTransformOrigin="0.5,0.5" FontFamily="Franklin Gothic Heavy" FontSize="18" FontWeight="Bold" Foreground="#FF239C99" FontStyle="Italic" BorderBrush="Black" BorderThickness="3,3,3,3" Height="55" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="143">
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF141C48" Offset="0.136"/>
+                    <GradientStop Color="#FF62769E" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-5.955"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-41.723"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="lblOwnerAdvertFormDescription" Content="Owner:"  HorizontalAlignment="Left" Height="27" Margin="36,72,0,0" VerticalAlignment="Top" Width="84" FontFamily="Franklin Gothic Heavy" FontSize="16" Background="#FFBAC0CC" Foreground="#FF171F49"/>
+        <Label x:Name="lblDogAdvertFormDescription" Content="Dog:" HorizontalAlignment="Left" Height="27" Margin="36,123,0,0" VerticalAlignment="Top" Width="84" FontFamily="Franklin Gothic Heavy" FontSize="16" Background="#FFBAC0CC" Foreground="#FF171F49"/>
+        <Label x:Name="txtOwnerAdvertFormDescription" Content="Label" HorizontalAlignment="Left" Height="27" Margin="184,72,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label x:Name="txtDogAdvertFormDescription" Content="Label" HorizontalAlignment="Left" Height="27" Margin="184,125,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label x:Name="txtTitleAdvertFormDescription" Content="Label"  FontFamily="Franklin Gothic Heavy" FontSize="16" HorizontalAlignment="Left" Height="50" Margin="36,0,0,362" VerticalAlignment="Bottom" Width="212"/>
+        <Label x:Name="txtDescriptionAdvertFormDescription" Content="Label" FontSize="16" HorizontalAlignment="Left" Height="145" Margin="36,244,0,0" VerticalAlignment="Top" Width="310"/>
+        <Label x:Name="lblPrizeAdvertFormDescription" Content="Prize:" HorizontalAlignment="Left" Height="27" Margin="36,150,0,0" VerticalAlignment="Top" Width="84" FontFamily="Franklin Gothic Heavy" FontSize="16" Background="#FFBAC0CC" Foreground="#FF171F49"/>
+        <Label x:Name="txtPrizeAdvertFormDescription" Content="Label" HorizontalAlignment="Left" Height="27" Margin="184,152,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label x:Name="lblDateAdvertFormDescription" Content="Date:" HorizontalAlignment="Left" Height="27" Margin="37,179,0,0" VerticalAlignment="Top" Width="84" FontFamily="Franklin Gothic Heavy" FontSize="16" Background="#FFBAC0CC" Foreground="#FF171F49"/>
+        <Label x:Name="txtDateAdvertFormDescription" Content="Date" HorizontalAlignment="Left" Height="27" Margin="184,181,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label x:Name="lblDescriptionFormDescription" Content="Description:" HorizontalAlignment="Left" Height="27" Margin="37,209,0,0" VerticalAlignment="Top" Width="114" FontFamily="Franklin Gothic Heavy" FontSize="16" Background="#FFBAC0CC" Foreground="#FF171F49"/>
+        <Button x:Name="btnBackAdvertForm"  Content="Back" Height="27" Margin="10,397,336,0" VerticalAlignment="Top" Background="#FF5D7199" BorderBrush="#FF249B98" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF171F49" BorderThickness="1,1,3,3" Click="btnExitAdvertAppForm_Copy_Click"/>
+        <Label x:Name="lblOwnerTelAdvertFormDescription" Content="Contact:" HorizontalAlignment="Left" Height="27" Margin="35,99,0,0" VerticalAlignment="Top" Width="84" FontFamily="Franklin Gothic Heavy" FontSize="16" Background="#FFBAC0CC" Foreground="#FF171F49"/>
+        <Label x:Name="txtOwnerTelAdvertFormDescription" Content="Label" HorizontalAlignment="Left" Height="27" Margin="184,98,0,0" VerticalAlignment="Top" Width="176"/>
+        <Label x:Name="AddDateAdvertFormDescription" Content="Label" HorizontalAlignment="Left" Height="31" Margin="245,397,0,0" VerticalAlignment="Top" Width="130"/>
+        <Label x:Name="lblAddDateAdvertDescription" Content="Date added:" HorizontalAlignment="Left" Height="27" Margin="98,397,0,0" VerticalAlignment="Top" Width="114" FontFamily="Franklin Gothic Heavy" Background="#FFBAC0CC" Foreground="#FF171F49" FontSize="14"/>
+        <Button x:Name="btnDogAdvertForm"  Content="Back" Height="27" HorizontalAlignment="Left" Margin="184,123,0,0" VerticalAlignment="Top" Background="#FF5D7199" BorderBrush="#FF249B98" FontFamily="Franklin Gothic Heavy" FontSize="16" Foreground="#FF171F49" BorderThickness="1,1,3,3" Click="btnDogAdvertAppForm_Copy_Click" Width="162"/>
+    </Grid>
+</Window>
